@@ -127,5 +127,6 @@ Today is <?php echo date("l");?>. Here is the latest news.
     while(++$count <= 12) {
         echo "$count times 12 is " . $count * 12 . "!<br>";
     }
+    echo "<hr>"
 ?>
 
