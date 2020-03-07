@@ -116,4 +116,16 @@ Today is <?php echo date("l");?>. Here is the latest news.
      } else {
          echo "You have enough.";
      }
+
+     echo "<br>";
 ?>
+
+<?php 
+    //while loop.
+    $count = 0;
+    //We can put counter directly in the "while" condition.
+    while(++$count <= 12) {
+        echo "$count times 12 is " . $count * 12 . "!<br>";
+    }
+?>
+
