@@ -89,4 +89,31 @@ Today is <?php echo date("l");?>. Here is the latest news.
 ?>
 <br>
 <?php
+    //Example of == (equals) and === (identical)
+    $a = "1000";
+    $b = "+1000";
+    //Outputs first statement. $a and $b are converted to integers.
+    if ($a == $b) { echo "Numbers are equal."; }
+    //Outputs nothing since stirngs are not equal.
+    if ($a === $b) { echo "Strings are identical."; }
+
+    echo "<br>";
+
+    //Two more if statements but asking if two variables are NOT equal or identical.
+    //Outputs nothing since $a and $b are equal in numeric perspective.
+    if ($a != $b) { echo "Numbers are NOT equal."; }
+    //Outputs "Strings are NOT identical." since as a strings $a and $b are NOT identical.
+    if ($a !== $b) { echo "Strings are NOT identical."; }
+
+    echo "<br>";
+?>
+
+<?php
+     $fuel = 1;
+    
+     if ($fuel <= 1) {
+         echo "Fill the tank.";
+     } else {
+         echo "You have enough.";
+     }
 ?>
