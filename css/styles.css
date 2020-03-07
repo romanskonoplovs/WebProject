@@ -1,0 +1,56 @@
+#loginPanel {
+    width: 300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#loginpagetitle {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1b2833;
+}
+
+li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+li a:hover {
+    background-color: #4d5a67;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #f2f1f1;
+}
+
+hr {
+    border-color: aliceblue;
+}
