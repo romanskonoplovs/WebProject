@@ -18,7 +18,7 @@
          <li><a href="index.php">Home</a></li>
          <li><a href="testing.php">News</a></li>
          <li><a href="#">Contact</a></li>
-         <li><a href="#">About</a></li>
+         <li><a href="usefulSnippets.php">Snippets</a></li>
      </ul>
      <img src="P1000486-2.jpg">
      <h1 id="loginpagetitle">Product CRM System</h1>
