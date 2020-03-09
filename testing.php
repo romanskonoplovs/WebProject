@@ -140,5 +140,40 @@ Today is <?php echo date("l");?>. Here is the latest news.
         return $result_string;
     }
 
-    echo string_multiplyer("TheString", 6);
+    echo string_multiplyer("TheString", 6) . "<br>";
+?>
+
+<?php
+    function unique_order($your_string) {
+        $str_array = str_split($your_string);
+        $temp;
+        $new_array = array();
+        for ($i = 0; $i < count($str_array); $i++) {
+            if ($str_array[$i] == $temp) {
+                continue;
+            }
+            array_push($new_array, $str_array[$i]);
+            $temp = $str_array[$i];
+        }
+
+        foreach ($new_array as $char) {
+            echo $char . "<br>";
+        }
+    }
+
+    unique_order(1123455);
+?>
+
+<?php
+    function smallestInteger ($arr) {
+        $temp = $arr[0];
+        for ($i = 0; $i < count($arr); $i++) {
+            if ($temp > $arr[$i]){
+                $temp = $arr[$i];
+            }
+        }
+        return $temp;
+    }
+
+    echo smallestInteger ([3, 5, 10, 1, 4, 55]);
 ?>
