@@ -130,3 +130,15 @@ Today is <?php echo date("l");?>. Here is the latest news.
     echo "<hr>"
 ?>
 
+<?php 
+    function string_multiplyer($str, $n) {
+        $result_string;
+        for ($i = 0; $i < $n; $i++) {
+            $result_string .= $str;
+        }
+
+        return $result_string;
+    }
+
+    echo string_multiplyer("TheString", 6);
+?>
