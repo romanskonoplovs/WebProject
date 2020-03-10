@@ -1,6 +1,12 @@
 
 
-Today is <?php echo date("l");?>. Here is the latest news. 
+<?php 
+    function console_log( $data ){
+        echo '<script>';
+        echo 'console.log('. json_encode( $data ) .')';
+        echo '</script>';
+      }
+?>
 
 <script type="text/javascript">
     // Prints the todays date.
@@ -175,5 +181,55 @@ Today is <?php echo date("l");?>. Here is the latest news.
         return $temp;
     }
 
-    echo smallestInteger ([3, 5, 10, 1, 4, 55]);
+    echo smallestInteger ([3, 5, 10, 1, 4, 55]) . "<hr>";
+?>
+
+<?php 
+    function array_odd_or_even($arr) {
+        $odd_array = array();
+        $even_array = array();
+        for ($i = 0; $i < count($arr); $i++) {
+            if ($arr[$i] % 2 == 0) {
+                array_push($even_array, $arr[$i]);
+            } else {
+                array_push($odd_array, $arr[$i]);
+            }
+        }
+
+        if (count($even_array) < count($odd_array)){
+            return $even_array[0];
+        } else {
+            return $odd_array[0];
+        }
+    }
+
+    print array_odd_or_even([3,7,5,9,11,23,4]);
+?>
+
+<?php 
+    function hashtag_gen($str) {
+        $hashtag = '#';
+        $stirng;
+        $string_array = array();
+        if (empty($str)) {
+            return false;
+        } elseif (strpos($str, 'a') == strlen($str)) {
+            echo "String as long as char";
+        
+        } else {
+            $string = ucwords($str);
+            $string = str_replace(' ', '', $string);
+            $string = trim($string);
+            $hashtag .= $string;
+            if (strlen($hashtag) < 140) {
+                return $hashtag;
+            } else {
+                return false;
+            }
+
+
+        }
+    }
+
+    console_log(hashtag_gen("hellow world woman"));
 ?>
